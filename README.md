@@ -60,3 +60,5 @@ npm run test:watch
 ## Публикация на GitHub Pages
 
 Проект настроен для автоматической публикации на GitHub Pages при пуше в ветку `main` через GitHub Actions.
+
+Приложение доступно по адресу: [https://Kuznetsov-SV.github.io/tournament-manager/](https://Kuznetsov-SV.github.io/tournament-manager/)

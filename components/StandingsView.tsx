@@ -59,15 +59,15 @@ export const StandingsView: React.FC = () => {
         <div className="h-64 w-full">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={tournament.players.slice(0, 10)}>
-              <XAxis dataKey="name" tick={{ fill: '#7373', fontSize: 12 }} interval={0} />
-              <YAxis tick={{ fill: '#737373' }} />
+              <XAxis dataKey="name" tick={{ fill: '#a3a3a3', fontSize: 12 }} interval={0} />
+              <YAxis tick={{ fill: '#a3a3a3' }} />
               <Tooltip
                 contentStyle={{ backgroundColor: '#171717', borderColor: '#262626', color: '#e5e5e5' }}
                 cursor={{ fill: 'rgba(255,255,255,0.05)' }}
               />
               <Bar dataKey="score" name="Очки" radius={[4, 4, 0, 0]}>
                 {tournament.players.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={index < 3 ? '#4f46e5' : '#818cf8'} />
+                  <Cell key={`cell-${index}`} fill={'#22c55e'} />
                 ))}
               </Bar>
             </BarChart>
